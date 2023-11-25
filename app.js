@@ -1,6 +1,6 @@
 import { serve } from "./deps.js";
 import { configure, renderFile } from "./deps.js";
-import * as addressService from "./services/addressService.js";
+import * as addressService from "./addressService.js";
 
 configure({
   views: `${Deno.cwd()}/views/`,
