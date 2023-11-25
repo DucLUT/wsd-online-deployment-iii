@@ -2,7 +2,7 @@ import {executeQuery} from "./database/database.js";
 
 const create = async (sender,message) => {
     await executeQuery(
-      "INSERT INTO addresses (sender, message) VALUES ($sender, $message);",
+      "INSERT INTO messages (sender, message) VALUES ($sender, $message);",
       { sender: sender, message: message },
     );
   };
