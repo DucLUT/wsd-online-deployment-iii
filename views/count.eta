@@ -1,4 +1,4 @@
-<% layout('./layouts/layout.eta') %>
+<% layout('./layout/layout.eta') %>
 
 <h1>Chat</h1>
 
