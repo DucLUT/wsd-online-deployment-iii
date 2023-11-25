@@ -7,11 +7,11 @@ if (Deno.env.get("DATABASE_URL")) {
   pool = new Pool(Deno.env.get("DATABASE_URL"), CONCURRENT_CONNECTIONS);
 } else {
   pool = new Pool({
-    hostname: "snuffleupagus.db.elephantsql.com",
-    database: "ruqeaysp",
-    user: "ruqeaysp",
-    password: "DWkdDBKfjbMRPZF5gPpILm1c37FHArEB",
-    port: 5432,
+    // hostname: "snuffleupagus.db.elephantsql.com",
+    // database: "ruqeaysp",
+    // user: "ruqeaysp",
+    // password: "DWkdDBKfjbMRPZF5gPpILm1c37FHArEB",
+    // port: 5432,
   }, CONCURRENT_CONNECTIONS);
 }
 
