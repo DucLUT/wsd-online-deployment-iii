@@ -1,4 +1,4 @@
-import {executeQuery} from "../database/database.js";
+import {executeQuery} from "./database/database.js";
 
 const create = async (sender,message) => {
     await executeQuery(
