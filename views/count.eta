@@ -1,3 +1,21 @@
 <% layout('./layouts/layout.eta') %>
 
-<h1>Visits: <%= it.count %></h1>
+<h1>Chat</h1>
+
+
+<form method="POST">
+  Sender: <input type="text" name="sender" /><br/>
+  Message: <input type="text" name="message" /><br/>
+  <input type="submit" value="Submit!" />
+</form>
+
+<h2>five most recent</h2>
+
+<ul>
+<% it.addresses.forEach((address) => { %>
+  <li>
+    <%= address.sender %>: <%= address.message %>
+    
+  </li>
+<% }); %>
+</ul>
